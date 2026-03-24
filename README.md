@@ -9,17 +9,27 @@ Spotify plugin for Sero — browse playlists, play tracks, and let the Sero Agen
 - **Agent tools** — create playlists, search tracks, get recommendations via the `spotify` tool
 - **OAuth PKCE** — secure, client-only Spotify auth flow
 
-## Installation
+## Sero Plugin Install
 
-```bash
-# From the Sero plugins directory
-git clone <repo-url> sero-spotify-plugin
-cd sero-spotify-plugin
-npm install
-npm run build
+Install in **Sero → Admin → Plugins** with:
+
+```text
+git:https://github.com/monobyte/sero-spotify-plugin.git
 ```
 
-Then register the plugin in Sero's settings or restart Sero to auto-discover it.
+Sero clones the source repo, installs its dependencies locally, builds the UI,
+and then hot-loads the plugin into the sidebar.
+
+## Pi CLI Usage
+
+Install as a Pi package:
+
+```bash
+pi install git:https://github.com/monobyte/sero-spotify-plugin.git
+```
+
+The agent gains a `spotify` tool with actions for playback control, playlist
+management, and track search.
 
 ## Prerequisites — Widevine DRM
 
