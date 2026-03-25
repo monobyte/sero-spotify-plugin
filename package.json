@@ -1,6 +1,6 @@
 {
   "name": "@sero-ai/plugin-spotify",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Spotify app for Sero — Web Playback SDK, playlist browsing, and agent tools",
   "keywords": [
     "pi-package"

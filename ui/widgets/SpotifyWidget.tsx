@@ -8,6 +8,7 @@
 
 import { useAppState, useAgentPrompt } from '@sero-ai/app-runtime';
 import type { SpotifyAppState } from '../../shared/types';
+import '../styles.css';
 
 const DEFAULT_STATE: SpotifyAppState = {
   auth: { clientId: '', redirectUri: '', accessToken: null, refreshToken: null, expiresAt: null, scope: '', connectedAt: null },
